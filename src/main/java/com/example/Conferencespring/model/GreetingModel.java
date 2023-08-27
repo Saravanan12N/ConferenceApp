@@ -5,6 +5,16 @@ public class GreetingModel {
     private String lastname;
     private int age;
 
+    public String getExperience() {
+        return Experience;
+    }
+
+    public void setExperience(String experience) {
+        Experience = experience;
+    }
+
+    private String Experience;
+
     public String getFirstname() {
         return firstname;
     }
