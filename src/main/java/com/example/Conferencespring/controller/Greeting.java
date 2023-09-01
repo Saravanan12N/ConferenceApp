@@ -19,4 +19,10 @@ public class Greeting {
         return greetingService.getAll();
 
     }
+
+
+    @PutMapping("/greeting")
+    public void addTopic(@RequestBody GreetingModel greetingModel){
+        greetingService.addTopic(greetingModel);
+    }
 }
