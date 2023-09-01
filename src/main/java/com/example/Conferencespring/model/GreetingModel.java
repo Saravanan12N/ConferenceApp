@@ -5,6 +5,19 @@ public class GreetingModel {
     private String lastname;
     private int age;
 
+    public GreetingModel() {
+    }
+
+    public GreetingModel(String firstname, String lastname, int age, String experience) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
+        Experience = experience;
+    }
+
+    private String Experience;
+
+
     public String getExperience() {
         return Experience;
     }
@@ -13,7 +26,7 @@ public class GreetingModel {
         Experience = experience;
     }
 
-    private String Experience;
+
 
     public String getFirstname() {
         return firstname;
