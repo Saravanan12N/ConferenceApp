@@ -26,4 +26,9 @@ public class Greeting {
         greetingService.addTopic(greetingModel);
         return "Added new record";
     }
+
+    @GetMapping("/countgreeting")
+    public long getCount(){
+        return greetingService.getCount();
+    }
 }

@@ -27,4 +27,8 @@ public class GreetingService {
         //greetingmodel.add(greetingModel);
         greetingRepository.save(greetingModel);
     }
+
+    public long getCount() {
+        return greetingRepository.count();
+    }
 }
