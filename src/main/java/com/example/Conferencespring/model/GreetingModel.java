@@ -1,6 +1,12 @@
 package com.example.Conferencespring.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class GreetingModel {
+
+    @Id
     private String firstname;
     private String lastname;
     private int age;

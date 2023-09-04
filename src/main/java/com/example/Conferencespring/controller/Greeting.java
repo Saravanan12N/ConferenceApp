@@ -21,8 +21,9 @@ public class Greeting {
     }
 
 
-    @PutMapping("/greeting")
-    public void addTopic(@RequestBody GreetingModel greetingModel){
+    @PostMapping("/greeting")
+    public String addTopic(@RequestBody GreetingModel greetingModel){
         greetingService.addTopic(greetingModel);
+        return "Added new record";
     }
 }
