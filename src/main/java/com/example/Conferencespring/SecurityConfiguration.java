@@ -8,15 +8,15 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-
-protected void Configure(@NotNull AuthenticationManagerBuilder auth)throws Exception{
-auth.inMemoryAuthentication()
-        .withUser("saro")
-        .password("nallakamu")
-        .roles("USER")
-        .and()
-        .withUser("mohan")
-        .password("govindarajan")
-        .roles("ADMIN");
-}
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.inMemoryAuthentication()
+                .withUser("saro")
+                .password("nallakamu")
+                .roles("USER")
+                .and()
+                .withUser("mohan")
+                .password("govindarajan")
+                .roles("ADMIN");
+    }
 }
