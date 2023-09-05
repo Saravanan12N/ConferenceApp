@@ -31,4 +31,9 @@ public class Greeting {
     public long getCount(){
         return greetingService.getCount();
     }
+
+    @GetMapping("/welcome")
+    public String getLogin(){
+        return ("<h1> Logged in SuccessFully </h1>");
+    }
 }
